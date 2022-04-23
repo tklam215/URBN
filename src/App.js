@@ -26,7 +26,6 @@ function App() {
         placeholder='Enter Location'
         type="text"/>
       </div>
-
       <div className="container">
           <div className="top">
             <div className="location">
@@ -39,9 +38,7 @@ function App() {
               {data.weather ? <p>{data.weather[0].main}</p>:null}
             </div>
           </div>
-
           {data.name != undefined && 
-        
             <div className="bottom">
               <div className="feels">
                 {data.main? <p className='bold'>{data.main.feels_like.toFixed()}°F</p> :null}
@@ -57,9 +54,6 @@ function App() {
               </div>
             </div>
           }
-
-
-  
       </div>
     </div>
   );
