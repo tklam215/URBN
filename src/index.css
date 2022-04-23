@@ -67,15 +67,15 @@ h1{
   transform: rotate(269deg);
 }
 
-.app .buttom{
-  display:flex;
+.app .bottom{
+  display: flex;
   justify-content: space-evenly;
   text-align: center;
   width: 100%;
   margin: 1rem auto;
   padding: 1rem;
   border-radius: 12px;
-  background-color: rgba(255,255,255, 0.2);
+  background-color:rgba(255,255,255, 0.2);
 }
 
 .bold{
