@@ -8,10 +8,10 @@ function App() {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=add24a5088aed081dd1adb7368be93d2`
 
   const searchLocation = (event) =>{
-    if(event.key == 'Enter'){
+    if(event.key === 'Enter'){
       axios.get(url).then((response) => {
-        setData (response.data)
-        console.log(response.data)
+      setData (response.data)
+      //console.log(response.data)
       })
       setLocation('')
     }
@@ -38,7 +38,8 @@ function App() {
               {data.weather ? <p>{data.weather[0].main}</p>:null}
             </div>
           </div>
-          {data.name != undefined && 
+
+          {data.name !== undefined && 
             <div className="bottom">
               <div className="feels">
                 {data.main? <p className='bold'>{data.main.feels_like.toFixed()}°F</p> :null}
