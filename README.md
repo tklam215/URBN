@@ -13,8 +13,31 @@ Create a simple app that interfaces with a public open API (http://www.programma
 
 Structure your app as you see fit. Connect to the API via xmlhttprequest, $.ajax, angular resource, fetch, or whatever you are most comfortable with. Use any framework, and any structure to your app, but be prepared to justify your selection. We use Vue.js here with SSR for reference. We encourage you to commit often and comment thoroughly while you work so we can get a good feeling of your progress through the application.
 
+# Bonus Points
 
+- [●] API error handling
 
+- [●]  State management
+
+- [●]  ES6+ features (example: async/await)
+
+- [●]  Modern CSS patterns
+
+- [] Server Side Rendering
+
+- [] Page performance/Lighthouse
+
+- [] Accessibility and SEO
+
+- [] Performance-optimized API usage
+
+- [] Lazy-loading non critical UI components
+
+- [] Unit tests
+
+- [●]  CSS UI Patterns
+
+- [] Usage of webpack for bundling and code splitting
 
 
 # Getting Started with Create React App

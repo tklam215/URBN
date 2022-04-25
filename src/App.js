@@ -1,21 +1,33 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import axios from 'axios'
 
 function App() {
   const [data,setData] = useState({})
   const [location, setLocation] = useState('')
 
+  useEffect(()=>{
+    async function getWeather(event){
+      searchLocation(event)
+    }
+  })
+  
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=add24a5088aed081dd1adb7368be93d2`
 
-  const searchLocation = (event) =>{
+  const searchLocation = async (event) =>{
     if(event.key === 'Enter'){
-      axios.get(url).then((response) => {
-      setData (response.data)
-      //console.log(response.data)
-      })
-      setLocation('')
+    try{
+        await axios.get(url).then((response) => {
+        setData (response.data)
+        //console.log(response.data)
+        })
+        setLocation('')
+    }catch(error){
+        alert("Location Does Not Exist");
+        console.log(error);
+    }
     }
   }
+
   return (
     <div className="app">
       <div className="search">
