@@ -15,16 +15,16 @@ function App() {
 
   const searchLocation = async (event) =>{
     if(event.key === 'Enter'){
-    try{
-        await axios.get(url).then((response) => {
-        setData (response.data)
-        //console.log(response.data)
-        })
-        setLocation('')
-    }catch(error){
-        alert("Location Does Not Exist");
-        console.log(error);
-    }
+      try{
+          await axios.get(url).then((response) => {
+          setData (response.data)
+          //console.log(response.data)
+          })
+          setLocation('')
+      }catch(error){
+          console.log(error)
+          alert("Invaild Location")
+      }
     }
   }
 
@@ -50,7 +50,6 @@ function App() {
               {data.weather ? <p>{data.weather[0].main}</p>:null}
             </div>
           </div>
-
           {data.name !== undefined && 
             <div className="bottom">
               <div className="feels">
