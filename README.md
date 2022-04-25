@@ -1,3 +1,22 @@
+# URBN Coding Assessment
+
+This repository contains the Urban Outfitters Coding Challenge.
+
+Weather web application that interact with the user to give it data (location) to return the location provided, temperature, description, feels like, humidity, and wind speed. 
+
+This application is build on using React js, with API calling using aixos from https://openweathermap.org/.
+
+
+# Objective
+
+Create a simple app that interfaces with a public open API (http://www.programmableweb.com/apis/directory). The app should utilize an interaction pattern, such as user input/button, geolocation, etc. to pass information to the API, and with returned data, create content on the page. This is really up to you to decide what you want to make here, so do something that is fun!
+
+Structure your app as you see fit. Connect to the API via xmlhttprequest, $.ajax, angular resource, fetch, or whatever you are most comfortable with. Use any framework, and any structure to your app, but be prepared to justify your selection. We use Vue.js here with SSR for reference. We encourage you to commit often and comment thoroughly while you work so we can get a good feeling of your progress through the application.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -38,33 +57,3 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
